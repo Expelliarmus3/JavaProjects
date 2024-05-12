@@ -25,5 +25,14 @@ public class Operators {
         else
             System.out.println(i2+" is odd");
 
+//another way
+
+        Scanner n = new Scanner(System.in);
+        System.out.print("Enter your number: ");
+        if ((v.nextInt()%2)==0)
+            System.out.println(i2+" is even");
+        else
+            System.out.println(i2+" is odd");
+
     }
 }

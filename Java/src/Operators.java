@@ -34,5 +34,29 @@ public class Operators {
         else
             System.out.println(i2+" is odd");
 
+//switch statement
+
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter your number: ");
+        int i4= s.nextInt();
+        switch (i4 % 2){
+            case 0:
+                System.out.println("Even");
+                break;
+            case 1:
+                System.out.println("Odd");
+
+        }
+//another way
+        Scanner t = new Scanner(System.in);
+        System.out.print("Enter your number: ");
+        int i5= t.nextInt();
+        switch (i5 % 2){
+            case 0:
+                System.out.println("Even");
+                break;
+            default:
+                System.out.println("Odd");
+        }
     }
 }

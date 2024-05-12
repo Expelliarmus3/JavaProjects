@@ -9,5 +9,6 @@ public class DoWhile {
             i = s.nextInt();
         }while (i<1||i>10);
         System.out.println(i + " is between 1 and 10. Thanks!");
+
     }
 }

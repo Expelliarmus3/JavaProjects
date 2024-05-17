@@ -1,3 +1,5 @@
+//checking for palindrome string
+
 public class LoopExercise10 {
     public static void main(String[] args) {
         String t = "Heho";

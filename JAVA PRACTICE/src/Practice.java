@@ -1,12 +1,14 @@
-//import java.util.Scanner;
-//
-//public class Practice {
-//    public static void main(String[] args) {
-//        int i;
-//        for (i = 1; i <= 100; i++) {
-//            if (i % 2 == 0)
-//                System.out.print(i + " ");
-//        }
+import java.util.Scanner;
+
+public class Practice {
+    public static void main(String[] args) {
+        int i;
+        for (i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
 //        System.out.println();
 //        for (i = 100; i >= 1; i--) {
 //            if (i % 2 == 0)
@@ -127,6 +129,8 @@
 //        }
 //        System.out.println(isPalindrome ? "palindrome" : "not palindrome");
 //
-//    }
+    }
 //
-//}
+}
+
+

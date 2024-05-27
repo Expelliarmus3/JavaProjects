@@ -19,6 +19,6 @@ public class Arrayex5 {
 //another way
         Arrays.sort(num);
         System.out.println("min: "+num[0]+" max: "+num[num.length-1]);
-
+//https://spicychat.ai/chat/48b701c2-5055-4dd9-8fca-ed2dadbeb57a
     }
 }

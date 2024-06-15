@@ -11,7 +11,8 @@ public class Array2ex1 {
 
     private static void printSumColumns(int[][] integers) {
         for (int i = 0; i < 4; i++) {
-            int sum = 0; //the position of this statement ensures that when we begin a new column the sum is 0
+            int sum = 0; //the position of this statement ensures
+            // that when we begin a new column the sum is 0
             for (int j=0;j< 3;j++){
                 sum += integers[j][i];
             }
@@ -21,7 +22,8 @@ public class Array2ex1 {
 
     private static void printSumRows(int[][] integers) {
         for (int i = 0; i < 3; i++) {
-            int sum = 0; //the position of this statement ensures that when we begin a new row the sum is 0
+            int sum = 0; //the position of this statement ensures
+            // that when we begin a new row the sum is 0
             for (int j=0;j< 4;j++){
                 sum += integers[i][j];
             }

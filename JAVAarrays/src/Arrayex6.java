@@ -25,4 +25,12 @@ public class Arrayex6 {
             num[i]=temp[i];
         System.out.println(Arrays.toString(num));
     }
+
+    public static void lala(String[] args) {
+        System.out.println("enter your choice: ");
+
+
+
+    }
 }
+

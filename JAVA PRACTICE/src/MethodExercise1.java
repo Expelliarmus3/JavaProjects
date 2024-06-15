@@ -13,5 +13,6 @@ public class MethodExercise1 {
         Scanner s=new Scanner(System.in);
         return  s.nextInt();
 
+
     }
 }

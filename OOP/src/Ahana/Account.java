@@ -53,4 +53,8 @@ public class Account {
         return dateCreated;
     }
 
+    public String toString(){
+        return this.id+" "+this.balance+" "+this.annualInterestRate+" "+this.dateCreated;
+    }
+
 }

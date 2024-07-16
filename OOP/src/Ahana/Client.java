@@ -32,10 +32,9 @@ public class Client {
     }
 
     public String toString() {
-        String s = this.id + " " + this.name + " " + this.phone + "\n";
-        for (Account account : accounts) {
-            s += accounts.toString()+"\n";
-        }
+        String s = this.id + " " + this.name + " " + this.phone +"\n";
+            s += accounts.toString() + "\n";
+
         return s;
     }
 

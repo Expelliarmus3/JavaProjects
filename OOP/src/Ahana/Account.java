@@ -1,5 +1,6 @@
 package Ahana;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Account {
@@ -7,22 +8,36 @@ public class Account {
     private double balance;
     private double annualInterestRate;
     private Date dateCreated;
-    public Account(int id,double balance,double annualInterestRate){
+    private Client client;
+    private ArrayList<Transaction> transactions;
+
+    public Account(int id,double balance,double annualInterestRate, Client client){
         this.id =id;
         this.balance =balance;
         this.annualInterestRate =annualInterestRate;
+        this.client = client;
+        this.transactions = new ArrayList<>();
 
         dateCreated= new Date();
     }
     public boolean withdraw (double amount){
         if(balance>=amount){
             balance -= amount;
+            this.transactions.add(new Transaction('W',amount,this.balance,"Withdrawn"+amount));
             return true;
         }
         return false;
     }
     public void deposit (double amount){
         balance+= amount;
+        this.transactions.add(new Transaction('D',amount,this.balance,"Deposited"+amount));
+    }
+    public int countTransaction(char type){
+        int count=0;
+        for(Transaction transaction:transactions)
+            if (transaction.getType()==type)
+                count++;
+        return count;
     }
 
     public int getId() {
@@ -53,8 +68,16 @@ public class Account {
         return dateCreated;
     }
 
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
     public String toString(){
-        return this.id+" "+this.balance+" "+this.annualInterestRate+" "+this.dateCreated;
+        return this.id+" "+this.balance+" "+this.annualInterestRate+" "+this.dateCreated+"\n"+transactions;
     }
 
 }

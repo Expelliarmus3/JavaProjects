@@ -2,7 +2,7 @@ package Ahana;
 
 public class Main {
     public static void main(String[] args) {
-        Account testAccount = new Account(1122,20000,4.5);
+        Account testAccount = new Account(1122,20000,4.5,new Client(4,"j","15"));
         if(testAccount.withdraw(2500))
             System.out.println("Withdraw successful");
         else

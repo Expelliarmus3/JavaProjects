@@ -49,42 +49,43 @@ public class Practise {
 //            System.out.println("No tax applicable");
 
 //question 4
-        int day = input.nextInt();
-        switch (day){
-            case 1:
-                System.out.println("Monday");
-            case 2:
-                System.out.println("Tuesday");
-            case 3:
-                System.out.println("Wednesday");
-            case 4:
-                System.out.println("Thursday");
-            case 5:
-                System.out.println("Friday");
-            case 6:
-                System.out.println("Saturday");
-            case 7:
-                System.out.println("Sunday");
-        }
+//        int day = input.nextInt();
+//        switch (day){
+//            case 1:
+//                System.out.println("Monday");
+//            case 2:
+//                System.out.println("Tuesday");
+//            case 3:
+//                System.out.println("Wednesday");
+//            case 4:
+//                System.out.println("Thursday");
+//            case 5:
+//                System.out.println("Friday");
+//            case 6:
+//                System.out.println("Saturday");
+//            case 7:
+//                System.out.println("Sunday");
+//        }
+//
+////question 5
+//
+//        System.out.println("Enter the year: ");
+//        int year = input.nextInt();
+//        if (year%4==0)
+//            System.out.println("It is leap year");
+//        else
+//            System.out.println("It is not a leap year");
+//
+////question 6
+//
+//        String website = input.next();
+//        if (website.endsWith(".org"))
+//            System.out.println("Thi is organizational website");
+//        if (website.endsWith(".com"))
+//            System.out.println("Thi is commercial website");
+//        if (website.endsWith(".in"))
+//            System.out.println("Thi is Indian website");
 
-//question 5
-
-        System.out.println("Enter the year: ");
-        int year = input.nextInt();
-        if (year%4==0)
-            System.out.println("It is leap year");
-        else
-            System.out.println("It is not a leap year");
-
-//question 6
-
-        String website = input.next();
-        if (website.endsWith(".org"))
-            System.out.println("Thi is organizational website");
-        if (website.endsWith(".com"))
-            System.out.println("Thi is commercial website");
-        if (website.endsWith(".in"))
-            System.out.println("Thi is Indian website");
 
     }
 }
